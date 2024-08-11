@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Shop from "./pages/Shop";
 import LoginSignup from "./pages/LoginSignup";
 import Product from "./pages/Product";
@@ -14,7 +14,7 @@ import kids_banner from "./Components/assets/banner_kids.png"
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />  
         <Routes>
         <Route path="/" element={<Shop />} />
@@ -28,7 +28,7 @@ const App = () => {
         <Route path="/login" element={<LoginSignup />} />
         </Routes>
         <Footer/>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
