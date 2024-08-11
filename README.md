@@ -6,8 +6,6 @@ Welcome to **E-commerce Limbo**, a modern and dynamic e-commerce web application
 
 Experience the live demo of our project [here](https://p-limbo1996.github.io/E-commerce-limbo/).
 
-![Screenshot](src/Components/assets/screenshot.png)
-
 ## 🛠️ Features
 
 - **🛒 Product Management**: Explore a wide range of products.
@@ -16,13 +14,7 @@ Experience the live demo of our project [here](https://p-limbo1996.github.io/E-c
 - **📱 Responsive Design**: Optimized for both mobile and desktop.
 
 ## 📸 Screenshots
-
-Here are some glimpses of our application:
-
-- ![Mens Category](src/Components/assets/banner_mens.png)
-- ![Mens Category](src/Components/assets/screenshot.png)
-- ![Womens Category](src/Components/assets/banner_women.png)
-- ![Kids Category](src/Components/assets/banner_kids.png)
+![Screenshot](src/Components/assets/screenshot.png)
 
 ## 📦 Installation
 
