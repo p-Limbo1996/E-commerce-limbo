@@ -1,0 +1,97 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+.popular h1{
+    color: #171717;
+    font-size:50px ;
+    font-weight: 600;
+}
+.popular hr{
+    width: 300px;
+    padding: 2px;
+    border-radius: 80%;
+    background: #252525 ;
+}
+.popular-item{
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+@media (max-width:1280px){
+    .popular{
+        margin-top: -60px;
+        height: 70vh;
+    }
+    .popular h1{
+        font-size:40px ;
+    }
+    .popular hr{
+        width: 250px;
+       
+    }
+    .popular-item{
+        margin-top: 30px;
+        gap: 20px;
+    }
+}
+
+@media (max-width:1024px){
+    .popular{
+        margin-top: -120px;
+        margin-bottom: 30px;
+        height: 60vh;
+    }
+    .popular h1{
+        font-size:30px ;
+    }
+    .popular hr{
+        width: 200px;
+       
+    }
+    .popular-item{
+        margin-top: 20px;
+        gap: 15px;
+    }
+}
+@media (max-width:800px){
+    .popular{
+        margin-top: -150px;
+        margin-bottom: 150px;
+        height: 90vh;
+    }
+    .popular h1{
+        font-size:30px ;
+    }
+    .popular hr{
+        width: 200px;
+       
+    }
+    .popular-item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       gap: 20px;
+    }
+}
+@media (max-width:500px){
+    .popular{
+        margin-top: -200px;
+        margin-bottom: 100px;
+    }
+    .popular h1{
+        font-size:22px ;
+    }
+    .popular hr{
+        width: 130px;
+       
+    }
+    .popular-item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       gap: 20px;
+    }
+}

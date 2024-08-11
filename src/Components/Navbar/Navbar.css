@@ -1,0 +1,232 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo p {
+  color: #171717;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+  font-size: 20px;
+  color: #626262;
+  font-weight: 500;
+}
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.nav-menu li hr {
+  border: none;
+  width: 90%;
+  height: 3px;
+  background: #eb423f;
+  border-radius: 80%;
+}
+
+.nav-login-card {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.nav-login-card button {
+  width: 157px;
+  height: 58px;
+  border-radius: 75px;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background: white;
+  color: #515151;
+  border: solid 1px #7a7a7a;
+}
+
+.nav-login-card button:active {
+  background: #f3f3f3;
+}
+
+.nav-card-count {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -55px;
+  border-radius: 11px;
+  background-color: #eb423f;
+  color: white;
+}
+
+.dropdown {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .navbar {
+    padding: 12px 40px;
+  }
+  .nav-logo img {
+    width: 40px;
+  }
+  .nav-logo p {
+    font-size: 25px;
+  }
+
+  .nav-menu {
+    gap: 30px;
+    font-size: 16px;
+  }
+  .nav-login-card {
+    gap: 30px;
+  }
+  .nav-login-card img {
+    margin-top: 5px;
+    width: 30px;
+  }
+  .nav-login-card button {
+    width: 117px;
+    height: 42px;
+    font-size: 16px;
+  }
+
+  .nav-card-count {
+    width: 18px;
+    height: 18px;
+    font-size: 13px;
+    margin-top: -28px;
+    margin-left: -39px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 12px 30px;
+  }
+  .nav-logo img {
+    width: 40px;
+  }
+  .nav-logo p {
+    font-size: 25px;
+  }
+
+  .nav-menu {
+    gap: 25px;
+    font-size: 14px;
+  }
+  .nav-login-card {
+    gap: 30px;
+  }
+
+  .nav-login-card button {
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 10px 0px;
+    justify-content: space-between;
+  }
+  .dropdown {
+    display: block;
+    width: 25px;
+    height: 28px;
+    cursor: pointer;
+    padding: 8px;
+    /* transition: 0.4s ease-out; */
+  }
+  .nav-logo img {
+    padding-left: 30px;
+    width: 40px;
+  }
+  .nav-logo p {
+    font-size: 25px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav-login-card {
+    gap: 10px;
+  }
+  .nav-menu-visible {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #ecececcd;
+    top: 64px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
+    box-shadow: 0 1px 3px -2px black;
+    font-size: 16px;
+    color: #515151;
+    font-weight: 500;
+  }
+  .open {
+    transform: rotate(180deg);
+  }
+  .nav-login-right {
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+  }
+  .nav-card-count {
+    width: 18px;
+    height: 18px;
+    font-size: 13px;
+    margin-top: -22px;
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-logo img {
+    padding-left: 15px;
+    width: 40px;
+  }
+  .nav-logo p {
+    font-size: 20px;
+  }
+  .nav-login-card button {
+    width: 75px;
+    height: 32px;
+    font-size: 12px;
+  }
+}
